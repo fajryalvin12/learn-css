@@ -55,15 +55,51 @@ p {
 }
 
 /* adjust border */
-p.dotted {
-  border-style: dotted;
-}
-p.grooved {
-  border-style: groove;
-}
 p.solid {
-  border-style: solid;
+  opacity: 1;
+  border-radius: 5px;
+
+  /* shorthand border */
+  border-left: 10px solid white;
 }
-p.outset {
-  border-style: outset;
+p.solid2 {
+  border-style: solid;
+  opacity: 1;
+}
+p.one {
+  border-color: orangered;
+}
+p.two {
+  border-color: forestgreen;
+}
+p.three {
+  border-color: dodgerblue;
+}
+
+/* adjust margin and padding */
+p.solid {
+  /* shorthand margin */
+  margin: 10px 10px 10px 20px;
+  /* 
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px; */
+
+  /* shorthand padding*/
+  padding: 10px 0px 0px 10px;
+}
+
+/* adjust height, width and max-width */
+
+p.solid {
+  height: 40px;
+}
+.card {
+  margin: 10px 20px;
+  padding: 10px 0px 0px 10px;
+  height: 200px;
+  width: 150px;
+  background-color: seashell;
+  border: 3px solid olivedrab;
+  border-radius: 5px;
 }
