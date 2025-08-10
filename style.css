@@ -1,0 +1,69 @@
+* {
+  font-family: Verdana;
+}
+body {
+  /* background-color: honeydew; */
+
+  /* using background color with RGBA format */
+  /* background-color: rgba(255, 99, 71, 0.2); */
+
+  /* attach image in background */
+  /* background-image: url("https://assets.manutd.com/AssetPicker/images/0/0/22/86/1463988/24-Andre-Onana1751366049240.png"); */
+
+  /* adjust repeat mode in image or bg */
+  /* background-repeat: no-repeat;
+
+  
+  background-position: right top; */
+
+  /* shorten the background styling */
+  /* sequence : bg-color, bg-image, bg-repeat, bg-attachment, bg-position */
+  background: honeydew
+    url("https://assets.manutd.com/AssetPicker/images/0/0/22/86/1463988/24-Andre-Onana1751366049240.png")
+    no-repeat right top;
+}
+
+/* using tag as a css selector */
+p {
+  font-size: 20px;
+}
+
+/* using id as a css selector */
+#title {
+  text-align: center;
+  /* using font color with HEX format */
+  color: honeydew;
+  background-color: indianred;
+}
+
+/* using class as a css selector */
+.content {
+  background-color: blanchedalmond;
+  text-align: center;
+  color: indigo;
+
+  /* adjust the transparency */
+  opacity: 0.5;
+}
+
+.content2 {
+  background-color: blanchedalmond;
+  color: indigo;
+
+  /* adjust the transparency */
+  opacity: 0.5;
+}
+
+/* adjust border */
+p.dotted {
+  border-style: dotted;
+}
+p.grooved {
+  border-style: groove;
+}
+p.solid {
+  border-style: solid;
+}
+p.outset {
+  border-style: outset;
+}
