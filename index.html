@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
     <title>Learn CSS from Scratch</title>
   </head>
   <body>
@@ -22,16 +32,66 @@
     <div>
       <p class="content">Hello World!</p>
     </div>
+
     <!-- list menu -->
     <div>
       <p class="content2 solid one">Color : Red</p>
+    </div>
+    <div>
       <p class="content2 solid two">Color : Green</p>
+    </div>
+    <div>
       <p class="content2 solid three">Color : Blue</p>
     </div>
+    <!-- end of list menu -->
 
-    <!-- others -->
-    <div class="card">This is container 1</div>
-    <div class="card">This is container 2</div>
-    <div class="card">This is container 3</div>
+    <!-- list with icons -->
+    <div class="list-icons">
+      <ul>
+        <li>
+          <i class="material-icons">cloud</i>
+          <div>cloud</div>
+        </li>
+        <li>
+          <i class="material-icons">favorite</i>
+          <div>favorite</div>
+        </li>
+        <li>
+          <i class="material-icons">attachment</i>
+          <div>attachment</div>
+        </li>
+        <li>
+          <i class="material-icons">computer</i>
+          <div>computer</div>
+        </li>
+        <li>
+          <i class="material-icons">traffic</i>
+          <div>traffic</div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- card -->
+    <div id="container-card">
+      <div id="card1" class="card"></div>
+      <div id="card2" class="card"></div>
+      <div id="card3" class="card"></div>
+      <div id="card1" class="card"></div>
+      <div id="card2" class="card"></div>
+      <div id="card3" class="card"></div>
+    </div>
+    <!-- end of card -->
+
+    <!-- link button -->
+    <p>
+      <b>
+        <a href="https://www.linkedin.com/in/fajryalvinhidayat/"
+          >This is a link</a
+        >
+      </b>
+    </p>
+
+    <!-- another div element -->
+    <div id="pos">This is dummy, free to custom</div>
   </body>
 </html>

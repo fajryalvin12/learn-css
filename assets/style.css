@@ -1,5 +1,6 @@
 * {
-  font-family: Verdana;
+  font-family: "Outfit", sans-serif;
+  font-weight: bold;
 }
 body {
   /* background-color: honeydew; */
@@ -34,6 +35,10 @@ p {
   /* using font color with HEX format */
   color: honeydew;
   background-color: indianred;
+
+  /* use position styling sticky for navbar, most suitable */
+  position: sticky;
+  top: 0;
 }
 
 /* using class as a css selector */
@@ -88,6 +93,13 @@ p.solid {
   /* shorthand padding*/
   padding: 10px 0px 0px 10px;
 }
+.list-icons {
+  margin: 10px 20px;
+  display: block;
+
+  /* to hide an element */
+  /* visibility: hidden; */
+}
 
 /* adjust height, width and max-width */
 
@@ -97,9 +109,91 @@ p.solid {
 .card {
   margin: 10px 20px;
   padding: 10px 0px 0px 10px;
-  height: 200px;
-  width: 150px;
+  height: 400px;
+  width: 250px;
   background-color: seashell;
   border: 3px solid olivedrab;
   border-radius: 5px;
+}
+
+/* adjust text formatting */
+
+.card {
+  text-align: center;
+  vertical-align: text-bottom;
+  /* text-decoration-line: underline;
+  text-decoration-color: orchid;
+  text-decoration-style: solid;
+  text-decoration-thickness: 3px; */
+
+  /* shorthand text-decoration */
+  text-decoration: underline orchid solid 3px;
+  text-transform: capitalize;
+
+  /* flex the content inside */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* adjust link formatting */
+
+a:link {
+  margin: 10px 20px;
+  color: navy;
+  text-decoration: none;
+  background-color: paleturquoise;
+  padding: 14px 25px;
+  text-align: center;
+  display: inline-block;
+  border: 2px solid navy;
+  cursor: pointer;
+}
+a:hover,
+a:active {
+  margin: 10px 20px;
+  color: orangered;
+  background-color: lightyellow;
+}
+
+/* adjust list */
+li,
+#container-card {
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  flex-shrink: none;
+}
+
+#container-card {
+  /* width: 100%; */
+  justify-content: space-evenly;
+  /* overflow: auto; */
+  overflow-x: scroll; /* Add vertical scrollbar */
+}
+
+#pos {
+  margin: 10px 20px;
+  background-color: lightseagreen;
+  color: azure;
+  padding: 10px;
+  width: 30%;
+  border: solid 3px mediumblue;
+}
+
+/* adjust image card container */
+#card1 {
+  background: url("https://i.pinimg.com/736x/ef/30/d6/ef30d6d648b930fad44f0d8c5596aa5c.jpg")
+    no-repeat;
+  background-size: cover;
+}
+#card2 {
+  background: url("https://i.pinimg.com/736x/d0/74/6c/d0746c822c78a48c5e434313e60d1577.jpg")
+    no-repeat;
+  background-size: cover;
+}
+#card3 {
+  background: url("https://i.pinimg.com/736x/a4/d5/91/a4d591b85709968d87c33dd01030a46f.jpg")
+    no-repeat;
+  background-size: cover;
 }
