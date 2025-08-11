@@ -39,6 +39,14 @@ p {
   /* use position styling sticky for navbar, most suitable */
   position: sticky;
   top: 0;
+
+  /* adjust display */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  /* padding and margin */
+  padding: 0 20px;
 }
 
 /* using class as a css selector */
@@ -138,7 +146,7 @@ p.solid {
 
 /* adjust link formatting */
 
-a:link {
+p > b > a:link {
   margin: 10px 20px;
   color: navy;
   text-decoration: none;
@@ -149,8 +157,8 @@ a:link {
   border: 2px solid navy;
   cursor: pointer;
 }
-a:hover,
-a:active {
+p > b > a:hover,
+p > b > a:active {
   margin: 10px 20px;
   color: orangered;
   background-color: lightyellow;
@@ -196,4 +204,65 @@ li,
   background: url("https://i.pinimg.com/736x/a4/d5/91/a4d591b85709968d87c33dd01030a46f.jpg")
     no-repeat;
   background-size: cover;
+}
+
+/* adjust navbar style */
+#navbar-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: burlywood;
+  width: 200px;
+  text-align: left;
+}
+.menu {
+  display: block;
+  color: midnightblue;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+.menu:hover {
+  background-color: darkblue;
+  color: coral;
+  width: 100%;
+}
+.menu.active {
+  background-color: coral;
+  color: darkblue;
+  width: 100%;
+}
+
+/* adjust dropdown formatting */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+#dropdown-content {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  background-color: midnightblue;
+  width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 16px 12px;
+  z-index: 1;
+  margin-bottom: 10px;
+  transition: all 0.7s ease;
+}
+#dropdown-content > li > a {
+  text-decoration: none;
+  display: block;
+  color: coral;
+  transition: all 0.7s ease;
+}
+#dropdown:hover #dropdown-content {
+  opacity: 1;
+  visibility: visible;
+  width: 200px;
+}
+#dropdown:hover #dropdown-content > li > a:hover {
+  color: midnightblue;
+  background-color: coral;
+  width: 100%;
+  text-align: left;
 }
